@@ -1,14 +1,9 @@
 "use client";
 import Image from "next/image";
-import { useRef } from "react";
-import { useScroll, motion } from "framer-motion";
+
+import { motion } from "framer-motion";
 
 const Projects = () => {
-  const ref = useRef(null);
-  const { scrollYProgress } = useScroll({
-    target: ref,
-    offset: ["0 1", "1.33 1"],
-  });
   const projects = [
     {
       img: "/url.png",
@@ -45,7 +40,6 @@ const Projects = () => {
         <span className="text-purple-100">My </span>Projects
       </motion.h1>
       <motion.div
-        ref={ref}
         style={{ opacity: 1 }}
         className="flex gap-5 flex-wrap items-center justify-center"
       >
@@ -56,6 +50,7 @@ const Projects = () => {
               opacity: 1,
               transition: { delay: i * 0.2, duration: 0.5 },
             }}
+            key={i}
             viewport={{ once: true, amount: 0.5 }}
             animate={{ translateX: 0 }}
             className="max-w-[300px]  flex flex-col items-center  p-3 border-2 border-purple gap-3  md:mt-10  rounded-lg"

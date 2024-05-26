@@ -14,14 +14,15 @@ const Hero = () => {
           className="text-white text-3xl md:text-5xl"
         >
           Hello 🖐️,
-          <br /> I'm <span className="text-purple font-bold">Jhon Mathew</span>
+          <br /> I&apos;m{" "}
+          <span className="text-purple font-bold">Jhon Mathew</span>
         </motion.h1>
         <motion.p
           initial={{ opacity: 0, y: "100%" }}
           animate={{ opacity: 1, y: "0", transition: { delay: 1.5 } }}
           className="text-white mt-5 text-xl md:text-2xl max-w-[500px]"
         >
-          I'm a{" "}
+          I&apos;m a{" "}
           <span className="text-purple-100 font-semibold">
             Frontend Developer{" "}
           </span>

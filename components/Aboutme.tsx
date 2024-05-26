@@ -1,25 +1,17 @@
 "use client";
-import { motion, useScroll } from "framer-motion";
+import { motion } from "framer-motion";
 import { FaReact, FaHtml5, FaCss3 } from "react-icons/fa";
 import { SiJavascript, SiTypescript } from "react-icons/si";
 import { RiTailwindCssFill, RiNextjsFill } from "react-icons/ri";
 import Image from "next/image";
-import React, { useRef } from "react";
 
 const Aboutme = () => {
-  const ref = useRef(null);
-  const { scrollYProgress } = useScroll({
-    target: ref,
-    offset: ["0 1", "1.33 1"],
-  });
-
   return (
     <div
       id="aboutme"
       className="text-white h-[100dvh] mt-10 pt-10 max-w-[550px]"
     >
       <motion.h1
-        ref={ref}
         initial={{ opacity: 0, translateX: -100 }}
         whileInView={{
           opacity: 1,
@@ -33,7 +25,6 @@ const Aboutme = () => {
       </motion.h1>
 
       <motion.div
-        ref={ref}
         initial={{ opacity: 0, translateX: 100 }}
         whileInView={{
           opacity: 1,
