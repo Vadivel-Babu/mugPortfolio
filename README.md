@@ -3,7 +3,7 @@
 First, clone the repository:
 
 ```bash
-npm instal
+npm install
 #and
 npm run dev
 ```
