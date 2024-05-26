@@ -47,7 +47,7 @@ const Contact = () => {
           transition: { delay: 0.2, duration: 0.5 },
         }}
         viewport={{ once: true, amount: 0.6 }}
-        className="text-2xl md:text-5xl font-bold text-center"
+        className="text-2xl md:text-5xl p-3 font-bold text-center"
       >
         <span className="text-purple-100">Contact</span> Me 📱
       </motion.h1>
@@ -59,7 +59,7 @@ const Contact = () => {
         }}
         viewport={{ once: true, amount: 0.6 }}
         onSubmit={handleSubmit(handleFormSubmit)}
-        className="max-w-[400px]  border border-purple rounded-lg mx-auto mt-10 py-3 px-4 flex flex-col justify-center items-center gap-3"
+        className="max-w-[400px]  border border-purple rounded-lg mx-auto mt-[50px] py-3 px-4 flex flex-col justify-center items-center gap-3"
       >
         <Input
           {...register("Name")}
