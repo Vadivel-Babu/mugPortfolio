@@ -9,7 +9,7 @@ const Aboutme = () => {
   return (
     <div
       id="aboutme"
-      className="text-white h-[100dvh] mt-10 pt-10 max-w-[550px]"
+      className="text-white h-[100dvh] mt-20 md:mt-10 pt-10 max-w-[550px]"
     >
       <motion.h1
         initial={{ opacity: 0, translateX: -100 }}
@@ -19,7 +19,7 @@ const Aboutme = () => {
           transition: { delay: 0.2, duration: 0.5 },
         }}
         viewport={{ once: true, amount: 0.6 }}
-        className="text-center text-2xl md:text-5xl font-bold"
+        className="text-center text-2xl md:text-5xl md:mt-2 font-bold p-2"
       >
         About <span className="text-purple">Me</span>
       </motion.h1>

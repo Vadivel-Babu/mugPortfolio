@@ -14,6 +14,7 @@ const Projects = () => {
             url and delete the shorten url. Implemented feature to store data in
             database.`,
       url: "https://url-client-gamma.vercel.app/",
+      code: "https://github.com/Vadivel-Babu/urlClient",
     },
     {
       img: "/cart.png",
@@ -21,6 +22,7 @@ const Projects = () => {
             and authorization using React, Express, Typescript, tailwind, MongoDB and Nodejs.
             Developed feature to store data in frontend in local storage to keep the data persisted.Implemented routing feature using react-router.`,
       url: "https://cart-kd38.vercel.app/",
+      code: "https://github.com/Vadivel-Babu/reduxcart",
     },
   ];
   return (
@@ -35,7 +37,7 @@ const Projects = () => {
           transition: { delay: 0.2, duration: 0.5, translateY: 0 },
         }}
         viewport={{ once: true, amount: 0.6 }}
-        className="text-2xl md:text-5xl mb-4 font-bold text-center"
+        className="text-2xl md:text-5xl mb-2 md:mb-4 font-bold text-center"
       >
         <span className="text-purple-100">My </span>Projects
       </motion.h1>
@@ -68,12 +70,16 @@ const Projects = () => {
                   Live site
                 </span>
               </a>
-              <button className="p-[3px] relative">
+              <a
+                className="p-[3px] relative"
+                target="blank"
+                href={project.code}
+              >
                 <div className="absolute inset-0 bg-gradient-to-r from-purple-100 to-purple-500 rounded-lg" />
                 <div className="px-8 py-2  bg-black rounded-[6px]  relative group transition duration-200 text-white hover:bg-transparent">
                   Code
                 </div>
-              </button>
+              </a>
             </div>
           </motion.div>
         ))}

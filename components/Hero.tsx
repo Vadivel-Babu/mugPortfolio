@@ -5,9 +5,9 @@ import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
-    <div className="pt-36 pb-20 md:pt-52">
+    <div className="pt-36 pb-20 h-[100dvh] md:pt-52">
       <div>
-        <Spotlight fill="#d42fed" />
+        <Spotlight fill="#d42fed" className="w-[50%]" />
         <motion.h1
           initial={{ opacity: 0, y: "100%" }}
           animate={{ opacity: 1, y: "0", transition: { delay: 1.2 } }}
